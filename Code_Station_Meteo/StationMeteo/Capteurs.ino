@@ -82,7 +82,7 @@ void doReadBMP280() {
 void doSyncNTP() {
   timeClient.update();
   
-  // NOUVEAU : Le Ticker NTP s'exécute toutes les heures (3600s).
+  // Le Ticker NTP s'exécute toutes les heures (3600s).
   // On en profite pour décaler notre historique de pression pour calculer la tendance sur 3H !
   if (lastPressure > 0) {
     pressureHistory[2] = pressureHistory[1]; // H-3 devient H-2

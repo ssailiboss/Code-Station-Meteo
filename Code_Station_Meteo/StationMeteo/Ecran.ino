@@ -84,8 +84,7 @@ void majEcran() {
         idIconePluie = 23; // Pluie forte / Déluge
     }
     
-    // Assure-toi de remplacer les numéros (12, 13, 14, 15) par les vrais IDs 
-    // de tes images dans ton logiciel Nextion Editor !
+
     envoyerNextionPic("page6", "p2", idIconePluie);
     
     // Envoi du texte d'intensité de la pluie (ex: Averses, Bruine...)
@@ -128,7 +127,6 @@ void majEcran() {
     int idIconeVent = (lastWindSpeed < 10) ? 6 : (lastWindSpeed < 30 ? 7 : 8);
     envoyerNextionPic("page3", "p1", idIconeVent);
 
-    // CORRECTION : On utilise bien "tBft" pour correspondre à ton design !
     String beaufortEcran = getBeaufortText(lastWindSpeed);
     beaufortEcran.replace("ê", "e");
     beaufortEcran.replace("è", "e");

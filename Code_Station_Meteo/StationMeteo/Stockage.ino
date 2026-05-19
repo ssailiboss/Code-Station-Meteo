@@ -13,7 +13,7 @@ void readConfig() {
       file.println("SSID=OPPO Find X5");
       file.println("PASS=123456789");
       file.println("ALTITUDE=60.0"); // Ajout du paramètre sur la SD
-      file.println("UTC_OFFSET=2"); // +2000 ppm ou heure d'été par défaut
+      file.println("UTC_OFFSET=2"); // +2heures (heure été France) par défaut
       file.close();
       Serial.println("Fichier config.txt créé avec les paramètres par défaut.");
     }

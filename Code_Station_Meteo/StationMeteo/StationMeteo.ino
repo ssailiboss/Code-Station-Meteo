@@ -163,10 +163,10 @@ void setup() {
 }
 
 void loop() {
-  MDNS.update(); // NOUVEAU : Nécessaire pour garder le lien .local actif
+  MDNS.update();
   server.handleClient();
 
-  // NOUVEAU : Vérification de la connexion Wi-Fi (toutes les 10 secondes si perdu)
+  // Vérification de la connexion Wi-Fi (toutes les 10 secondes si perdu)
   if (WiFi.status() != WL_CONNECTED) {
     if (millis() - dernierTempsWifi > 10000) { 
       Serial.println("Wi-Fi perdu ! Tentative de reconnexion douce...");
