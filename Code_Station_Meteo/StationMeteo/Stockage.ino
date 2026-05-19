@@ -2,7 +2,7 @@
   Fichier : Stockage.ino
 */
 
-// --- NOUVEAU : Fonction pour lire ou créer le fichier de configuration Wi-Fi ---
+// --- Fonction pour lire ou créer le fichier de configuration Wi-Fi ---
 void readConfig() {
   if (!sdOk) return;
 
