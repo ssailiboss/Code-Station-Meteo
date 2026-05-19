@@ -10,7 +10,6 @@ Ce dépôt contient le code source de notre projet académique de station mété
 * Microcontrôleurs : 2x ESP8266 (FireBeetle / NodeMCU)
 * Écran : Nextion NX4024T032
 * Capteurs : DHT20, SCD40, BMP280, AS5600, Anémomètre optique, Pluviomètre.
-* 
 ## ⚙️ Configuration et Installation
 
 ### 1. Préparation de la carte SD (Configuration système)
