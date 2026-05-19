@@ -10,3 +10,16 @@ Ce dépôt contient le code source de notre projet académique de station mété
 * Microcontrôleurs : 2x ESP8266 (FireBeetle / NodeMCU)
 * Écran : Nextion NX4024T032
 * Capteurs : DHT20, SCD40, BMP280, AS5600, Anémomètre optique, Pluviomètre.
+* 
+## ⚙️ Configuration et Installation
+
+### 1. Préparation de la carte SD (Configuration système)
+L'unité intérieure (Maître) repose sur une carte Micro SD (formatée en **FAT32**) pour stocker les données et charger la configuration. Cela permet de changer de réseau Wi-Fi ou de déménager la station sans jamais avoir à reprogrammer l'ESP8266.
+
+À la racine de la carte SD, créez un fichier texte nommé `config.txt` et renseignez vos paramètres selon ce format strict :
+
+```text
+SSID=Nom_De_Votre_Reseau_WiFi
+PASS=Votre_Mot_De_Passe_WiFi
+ALTITUDE=60.0
+UTC_OFFSET=1
