@@ -15,7 +15,7 @@ Ce dépôt contient le code source de notre projet académique de station mété
 ### 1. Préparation de la carte SD (Configuration système)
 L'unité intérieure (Maître) repose sur une carte Micro SD (formatée en **FAT32**) pour stocker les données et charger la configuration. Cela permet de changer de réseau Wi-Fi ou de déménager la station sans jamais avoir à reprogrammer l'ESP8266.
 
-Prenez la carte SD de l'unité intérieur, créez, si pas présent, un fichier texte nommé `config.txt` et renseignez vos paramètres selon ce format strict :
+Prenez la carte SD de l'unité intérieur, créez si pas présent un fichier texte nommé `config.txt` et renseignez vos paramètres selon ce format strict :
 
 ```text
 SSID=Nom_De_Votre_Reseau_WiFi
